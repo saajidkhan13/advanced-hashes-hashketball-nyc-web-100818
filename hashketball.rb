@@ -123,6 +123,7 @@ def num_points_scored(player)
 end 
 
 def shoe_size(player)
+  binding.pry 
   all_players = game_hash[:home][:players].merge(game_hash[:away][:players])
   all_players[player][:shoe]
 end 
